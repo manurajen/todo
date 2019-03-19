@@ -1,4 +1,6 @@
 import React from 'react';
+import edit from '../edit.png';
+import Delete from '../delete.png';
 
 export default class TodoItem extends React.Component {
   render(){
@@ -9,8 +11,8 @@ export default class TodoItem extends React.Component {
           {title}
         </div>
         <div className="links">
-          <a href="#" onClick={handleEdit}>Edit</a>
-          <a href="#" onClick={handleDelete}>Delete</a>
+          <a href="#" onClick={handleEdit}><img src={edit} /></a>
+          <a href="#" onClick={handleDelete}><img src={Delete} /></a>
         </div>
         <div className="clr"></div>
       </li>

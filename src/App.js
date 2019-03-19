@@ -53,8 +53,8 @@ class App extends Component {
     return (
       <div>
         <h1>App section</h1>
-        <TodoInput item={this.state.item} handleChange={this.handleChange} handleSave={this.handleSave} />
-        <TodoList items={this.state.items} clearAll={this.clearAll} handleDelete={this.handleDelete} handleEdit={this.handleEdit} />
+        <TodoInput item={this.state.item} handleChange={this.handleChange} handleSave={this.handleSave} editMode={this.state.editMode} />
+        <TodoList items={this.state.items} clearAll={this.clearAll} handleDelete={this.handleDelete} handleEdit={this.handleEdit}  />
       </div>
     );
   }
